@@ -6,9 +6,9 @@ import { Context } from '../App'
 function VoprosOtvet() {
 	const screens = useScreens()
 	const { data } = useContext(Context)
-	const color = '#f97316'
+	const color = '#ff001d'
 	return (
-		<section id='vopros' className='border-b border-orange-600'>
+		<section id='vopros' className='border-b border-white'>
 			<div className={data ? 'fon2-mobile' : 'fon2'}>
 				<div className='h-12'></div>
 				<div className='container'>

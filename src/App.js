@@ -31,7 +31,7 @@ function App() {
       locale={locale}
       theme={{
         token: {
-          colorPrimary: '#f97316',
+          colorPrimary: '#ff001d',
         },
       }}
     >

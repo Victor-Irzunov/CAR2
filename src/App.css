@@ -4,10 +4,10 @@
 @tailwind utilities;
 
 :root{
-	--bg: #f97316;
+	--bg: #ff001d;
 	--col: #343434;
 	--colTab: #fff;
-	--hov: #fdba74;
+	--hov: #ff001d9c;
 }
 /* --col: #343434; */
 

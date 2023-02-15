@@ -8,9 +8,9 @@ import foto4 from '../images/foto-service/service-4.webp'
 import {Context} from '../App'
 function FotoCarService() {
 	const { data } = useContext(Context)
-	const color = '#f97316'
+	const color = '#ff001d'
 	return (
-		<section id='galereya' className='border-b border-orange-600'>
+		<section id='galereya' className='border-b border-white'>
 			<div className={data ? 'fon4-mobile':'fon4'}>
 				<div className='h-20'></div>
 					<div className='container'>

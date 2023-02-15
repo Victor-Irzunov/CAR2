@@ -75,7 +75,7 @@ function MainPage() {
 		<>
 
 
-			<section id='main' className='main-section border-b border-orange-600'>
+			<section id='main' className='main-section border-b border-[#fff]'>
 
 				<FloatButton.Group
 					shape="circle"
@@ -118,19 +118,19 @@ function MainPage() {
 								{active === 1 &&
 									<div className='flex flex-col text-lg'>
 										<a href='tel:80290000000'
-											className='mb-6 text-white text-xl hover:text-orange-600'
-											onClick={() => window.gtag_report_conversion('tel:80290000000')}
+											className='mb-6 text-white text-xl hover:text-[#ff001d]'
+											onClick={() => window.gtag_report_conversion('tel:80296701313')}
 										>
 											<Tooltip title="A1">
-												+375 29 000-00-00
+											+375 (29) 670-13-13
 											</Tooltip>
 											<Button type="primary" shape="circle" size='large' className='ml-5' icon={<PhoneOutlined className='animate-pulse' />} />
 										</a>
 
 
-										<div className='text-center'>
+										<div className={`${screens.md ? 'text-left': 'text-center'}`}>
 											<p
-												className='uppercase text-base text-orange-600 cursor-pointer'
+												className='uppercase text-base text-[#ff001d] cursor-pointer'
 												onClick={() => showModal('Задать вопрос')}
 											>
 												Задать вопрос
@@ -142,9 +142,9 @@ function MainPage() {
 									active === 2 &&
 									<div className='text-white text-lg'>
 										<p>г. Минск</p>
-										<p><span className='font-thin text-sm'>микрорайон</span> Минск</p>
-										<p>ул. Минская </p>
-										<Button type='link' href='https://yandex.by/maps/29630/minsk-district/house/Zk4YcgVmSkQGQFtpfXR0dH9lYw==/?ll=27.426311%2C53.855367&z=16.81' className='text-orange-600' style={{ paddingLeft: '0' }} target='_blank'>Посмотреть на карте</Button>
+										{/* <p><span className='font-thin text-sm'>микрорайон</span> Минск</p> */}
+										<p>ул. Гурского 22к6 </p>
+										<Button type='link' href='https://yandex.by/maps/157/minsk/house/Zk4YcgBoSk0AQFtpfXR5dntgZA==/?ll=27.478387%2C53.887730&z=16.81' className='text-[#ff001d]' style={{ paddingLeft: '0' }} target='_blank'>Посмотреть на карте</Button>
 									</div>
 								}
 								{
@@ -178,7 +178,7 @@ function MainPage() {
 								<Col lg={12} md={24} sm={24} xs={24}>
 									<div className='w-full h-full flex justify-center items-end mt-16'>
 										<div
-											className='bg-gradient-to-r from-orange-400 to-orange-600 w-full h-96 
+											className='bg-gradient-to-r from-red-400 to-[#ff001d] w-full h-96 
 									rounded-3xl opacity-80 relative
 									overflow-hidden
 									'

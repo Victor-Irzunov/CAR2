@@ -36,7 +36,7 @@ export const FooterSection = () => {
 				<div className='container text-center pt-7 pb-2'>
 					<div className=''>
 						<h2 className='text-xl text-white uppercase tracking-wider'>
-							Качественное<span className='text-orange-500'> СТО</span>  в Минске
+							Качественное<span className='text-[#ff001d]'> СТО</span>  в Минске
 						</h2>
 					</div>
 					<div className=''>
@@ -46,8 +46,8 @@ export const FooterSection = () => {
 
 					<h3 className='text-white  font-light uppercase'>Записаться на ремонт</h3>
 
-					<div className='text-orange-500 mb-6 mt-5'>
-						<a href='tel:80291466601' className='text-4xl'>+375 29 146-66-01</a>
+					<div className='text-[#ff001d] mb-6 mt-5'>
+						<a href='tel:80296701313' className='text-4xl'>+375 29 670-13-13</a>
 						{/* <p className=''>
 						+375 29 278-08-78
 					</p> */}
@@ -55,7 +55,7 @@ export const FooterSection = () => {
 
 					<div className='text-white'>
 						<p className='text-xs uppercase'>
-							запишитесь заранее на определёное время и получите скидку<span className='text-orange-500 text-sm'> 5%</span> на ремонт Вашего автомобиля.
+							запишитесь заранее на определёное время и получите скидку<span className='text-[#ff001d] text-sm'> 5%</span> на ремонт Вашего автомобиля.
 						</p>
 						<Button
 							type='primary'
@@ -89,7 +89,7 @@ export const FooterSection = () => {
     text-gray-400/50
 		mb-0 leading-3 pt-1
       ">
-							Copyright Ⓒ 2018-2023. Created & Designed By
+							Copyright Ⓒ 2023. Created & Designed By
 							<a href="https://vi-tech.by" className="text-cyan-500" target="_blank"> VI:TECH</a>
 							. &nbsp; Все права защищены. Информация на сайте не является публичной офертой.
 						</p>

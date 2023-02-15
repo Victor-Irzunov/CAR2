@@ -33,7 +33,7 @@ export const MenuMobil = ({ onClose }) => {
 	return (
 		<div className='max-h-screen'>
 			<nav className='text-center flex flex-col justify-between'>
-				<ul className='h-[35vh] flex flex-col justify-between items-center text-lg text-[#f8862e] cursor-pointer'>
+				<ul className='h-[35vh] flex flex-col justify-between items-center text-lg text-[#ff001d] cursor-pointer'>
 					<li>
 						<LinkScroll to='main'
 							smooth={true}
@@ -114,9 +114,7 @@ export const MenuMobil = ({ onClose }) => {
 					</li>
 				</ul>
 
-				
-
-
+			
 				<div className=''>
 					<Image src={image} width='100%' />
 				</div>

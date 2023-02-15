@@ -20,8 +20,8 @@ export const OtzyvySection2 = () => {
 		<section className='py-12 w-full z-10 bg-white min-h-[60vh]' id='otzyvy'>
 			<div className='container px-10'>
 				<div className='text-center mb-12'>
-					<h2 className='text-4xl text-orange-500 uppercase'>Наши<span className='text-black'> отзывы</span></h2>
-					<LineOutlined style={{ color: '#f8862e', fontSize: '3rem' }} />
+					<h2 className='text-4xl text-[#ff001d] uppercase'>Наши<span className='text-black'> отзывы</span></h2>
+					<LineOutlined style={{ color: '#ff001d', fontSize: '3rem' }} />
 				</div>
 
 				<div className=''>
@@ -45,7 +45,7 @@ export const OtzyvySection2 = () => {
 						</div>
 						<div className='pl-6 mt-2'>
 							<p className='text-left text-sm mt-4'>
-								Поломалась АКПП, эвакуатор приехал быстро, машина большая я всё переживал как будут тянуть, что-бы бампер не повредить. Видно что водитель опытный, сделал все безупречно и затянул и спустил.
+								Поломалась машина, сильно плавали оборы, был на двух СТО долго смотрели, компьютером делали диагностику ..... .
 							</p>
 						</div>
 						<div className='pl-10 mt-6'>
@@ -72,7 +72,7 @@ export const OtzyvySection2 = () => {
 							</div>
 							<div className='ml-3 w-1/2'>
 								<p className='mb-0 text-lg'>Лукашевич Александр</p>
-								<p className='text-xs mb-1'>Hummer</p>
+								<p className='text-xs mb-1'>Ford C-MAX</p>
 								<p className='text-[10px] text-gray-400'>11.04.2020</p>
 								<Rate allowHalf defaultValue={4.5} />
 
@@ -83,7 +83,7 @@ export const OtzyvySection2 = () => {
 						</div>
 						<div className='pl-6 mt-2'>
 							<p className='text-left text-sm mt-4'>
-								Что-то в двигателе застучало, остановился на светофоре и всё. Очень не приятно поломаться на перекрестке в час пик. Позвонил по телефону срочной эвакуации, машин свободных не было, но ребята решили вопрос и машина приехала через 10 минут. Огромное спасибо.
+								Что-то в двигателе застучало, остановился на светофоре и всё. Очень не приятно поломаться на перекрестке в час пик. Нашёл в интернете эту станцию, ребята подсказили недорогой эвакуатор. Привезли на СТО, быстро нашли проблему ..... . Огромное спасибо.
 							</p>
 
 						</div>
@@ -111,7 +111,7 @@ export const OtzyvySection2 = () => {
 							</div>
 							<div className='ml-3 w-1/2'>
 								<p className='mb-0 text-lg'>Бакун Сергей</p>
-								<p className='text-xs mb-1'>BMW E39</p>
+								<p className='text-xs mb-1'>BMW E60</p>
 								<p className='text-[10px] text-gray-400'>10.02.2021</p>
 								<Rate allowHalf defaultValue={5} />
 
@@ -122,7 +122,7 @@ export const OtzyvySection2 = () => {
 						</div>
 						<div className='pl-6 mt-2'>
 							<p className='text-left text-sm mt-4'>
-								Какой-то кошмар, вроде зимняя резина, чуть-чуть руля на скорости крутонул, раскрутило на встречку, чудом остался жив. Приехали быстро, вытянули, ничего не повредили, правда повозиться пришлось я сел и уже тихонечко поехал дальше. Мужики выручили, я вам очень благодарен. Спасибо.
+								Пол года ездил и всегда при повороте был какой-то стук, я к одним специалистам ничего не нашли, поехал к другим искали искали, сказили поменять рычаги задние. Поменял ничего не изменилось. Я бы так и ездил, но жена возит ребёнка, надо делать. На работе посаветовали это сервис. Нашли причину, смазки в заднем шрусе не было... Огромное  Спасибо. Вы лучшие, буду Вас рекомендовать.
 							</p>
 
 						</div>
@@ -160,7 +160,7 @@ export const OtzyvySection2 = () => {
 						</div>
 						<div className='pl-6 mt-2'>
 							<p className='text-left text-sm mt-4'>
-								Заглох мой спринтер под Москвой. Звонил по московским эвакуаторам, цены космос, не знал что делать. Друг подсказал этих ребят, цена в три раза дешевле чем в Москве. Приехали, забрали, по дороге пообщались, Сергей очень приятный собеседник. Хороший сервис, приятные цены. Рекомендую.
+								Заглох мой спринтер. . Рекомендую.
 							</p>
 
 						</div>
@@ -199,7 +199,7 @@ export const OtzyvySection2 = () => {
 						</div>
 						<div className='pl-6 mt-2'>
 							<p className='text-left text-sm mt-4'>
-								Подхожу к машине, а она на правой стороне лежит на дороге, впритык к бордюру. Позже оказалось лопнула пружина, пробила колесо, кошмар. Одним эвакуаторщикам позвонила, объяснила ситуацию, сказали что нет какой-то тележки, может связываться не захотели, потому что я девушка и не умею объяснять, не знаю. Потом нашла этот эвакуатор, приехал он через 20 минут, сделал всё очень быстро. Круто. Приятно иметь дело с профессионалами.
+								Подхожу к машине, а она на правой стороне лежит на дороге, впритык к бордюру. Позже оказалось лопнула пружина, пробила колесо, кошмар. Позвонила, все за меня сделали, нашли эвакуатор, починили, нашли запчасти, даже пакрышку такую же. Все сделали аккуратно и недорого. Круто. Приятно иметь дело с профессионалами.
 							</p>
 
 						</div>
@@ -226,8 +226,8 @@ export const OtzyvySection2 = () => {
 						className='flex items-center justify-end'
 					>
 
-						<Popover content={content} title={<div className='text-center'><ExclamationCircleOutlined className='text-2xl text-orange-500 ml-3' /></div>} trigger="click">
-							<ExclamationCircleOutlined className='text-xl mr-5 text-orange-400' />
+						<Popover content={content} title={<div className='text-center'><ExclamationCircleOutlined className='text-2xl text-[#ff001d] ml-3' /></div>} trigger="click">
+							<ExclamationCircleOutlined className='text-xl mr-5 text-[#ff001d]' />
 						</Popover>
 						<Button onClick={() => setAdd(true)}>Добавить отзыв</Button>
 					</div>

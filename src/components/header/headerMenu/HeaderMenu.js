@@ -4,15 +4,15 @@ import { Affix, Button, Image,Popover,Badge } from 'antd'
 import { motion, AnimatePresence } from "framer-motion"
 import { ShakeOutlined, CalendarOutlined, MenuOutlined,NotificationOutlined } from '@ant-design/icons'
 import { DrawerComp } from '../../drawerComp/DrawerComp'
-import logo from '../../../images/logo.webp'
+import logo from '../../../images/logo2.png'
 import { Link as LinkScroll } from 'react-scroll'
 
 
-const text = <span className='text-xl text-orange-500'>Не пропустите</span>
+const text = <span className='text-xl text-[#ff001d]'>Не пропустите</span>
 const content = (
 	<div>
 		<p className='text-lg'>Только до конца месяца продлится акция</p>
-		<p>на ремонт подвески скидка <span className='text-lg text-orange-500 font-bold'>10%</span>
+		<p>на ремонт подвески скидка <span className='text-lg text-[#ff001d] font-bold'>10%</span>
 		</p>
 	</div>
 )
@@ -55,11 +55,11 @@ export const HeaderMenu = ({ isVisible }) => {
 					// onChange={(affixed) => setIsAffix(affixed)}
 					>
 						<div
-							className={isAffix ? 'relative pt-2 pb-2 bg-[#313846]' : `relative pt-5 pb-2 bg-[#313846]`}
+							className={isAffix ? 'relative pt-2 pb-2 bg-[#000]' : `relative pt-5 pb-2 bg-[#000]`}
 						>
 							<div className='container'>
 								<nav>
-									<ul className='flex justify-between items-center text-lg text-[#f8862e] cursor-pointer z-50'>
+									<ul className='flex justify-between items-center text-lg text-[#ff001d] cursor-pointer z-50'>
 										<li><LinkScroll to='main'
 											smooth={true}
 											offset={-100}
@@ -165,7 +165,7 @@ export const HeaderMenu = ({ isVisible }) => {
 
 						<div className='fixed top-2 right-2 p-3 border z-50'>
 							<MenuOutlined
-								className='text-4xl text-orange-500'
+								className='text-4xl text-[#ff001d]'
 								onClick={() => showDrawer('right', 'Меню', 'menu')}
 							/>
 						</div>
