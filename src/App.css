@@ -1,0 +1,177 @@
+/* @import '~antd/dist/antd.css'; */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+	--bg: #f97316;
+	--col: #343434;
+	--colTab: #fff;
+	--hov: #fdba74;
+}
+/* --col: #343434; */
+
+
+.app{
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+ }
+
+ button, [type='button'], [type='reset'], [type='submit'] {
+	-webkit-appearance: button;
+	/* background-color: #f03226; */
+	background-color: var(--bg);
+	opacity: .9;
+	background-image: none;
+
+}
+
+ svg,
+video,
+canvas,
+audio,
+iframe,
+embed,
+object {
+  display: block !important;
+  /* vertical-align: middle !important; */
+}
+
+img{
+	display: inline-block;
+}
+
+.hover-icon{
+	color:#959595 !important;
+}
+.hover-icon:hover{
+	/* color: #f03226 !important; */
+	color: var(--bg) !important;
+}
+
+.bg-gray-gradient {
+	background: linear-gradient(
+		125.17deg, #272727 0%, #11101d 100%
+	);
+}
+
+.ant-table-tbody {
+	background-color: var(--colTab);
+	/* color: #fff; */
+ }
+ .ant-table-thead .ant-table-cell{
+	background-color: var(--colTab) !important;
+	/* color: #fff !important; */
+ }
+
+ .ant-table-row-expand-icon{
+	background: var(--colTab) !important;
+ }
+
+ .ant-table-expanded-row .ant-table-cell{
+	background-color: var(--colTab);
+ }
+
+ 
+ .ant-table-tbody>tr.ant-table-row:hover>td, .ant-table-tbody>tr>td.ant-table-cell-row-hover{
+	background: var(--hov) !important;
+ }
+ tr.ant-table-expanded-row:hover>td {
+	background: var(--hov) !important;
+}
+
+.ant-collapse>.ant-collapse-item>.ant-collapse-header .ant-collapse-arrow svg{
+	color: #fff;
+}
+
+
+.ant-table-title{
+	background:  #f97316;
+}
+
+
+
+.main-block{
+	background: #4e4b4b url(./images/1221.webp);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center center;
+	background-blend-mode: multiply;
+	width: 100%;
+	/* min-height: 100vh; */
+}
+.main-block-mobile{
+	background: #4e4b4b url(./images/02.webp);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-blend-mode: multiply;
+	width: 100%;
+}
+
+
+
+.fon2{
+	background: var(--col) url(./images/fon.webp);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center center;
+	width: 100%;
+	background-blend-mode: multiply;
+}
+.fon2-mobile{
+	background: var(--col) url(./images/fon5.webp);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	width: 100%;
+	background-blend-mode: multiply;
+}
+
+
+
+.fon3{
+	background: var(--col) url(./images/fon1.webp);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center center;
+	width: 100%;
+	background-blend-mode: multiply;
+}
+.fon3-mobile{
+	background: var(--col) url(./images/03.webp);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center top;
+	width: 100%;
+	background-blend-mode: multiply;
+}
+
+
+.fon4{
+	background: var(--col) url(./images/fon2.webp);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center center;
+	width: 100%;
+	background-blend-mode: multiply;
+}
+.fon4-mobile{
+	background: var(--col) url(./images/fon8.webp);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: right top;
+	width: 100%;
+	background-blend-mode: multiply;
+}
+
+
+
+
+
