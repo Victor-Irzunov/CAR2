@@ -1,7 +1,7 @@
 import React,{useContext} from 'react'
 import { Row, Col, Image } from 'antd'
 import { LineOutlined } from '@ant-design/icons'
-import foto1 from '../images/foto-service/service-1.webp'
+import foto1 from '../images/foto-service/service.webp'
 import foto2 from '../images/foto-service/service-2.webp'
 import foto3 from '../images/foto-service/service-3.webp'
 import foto4 from '../images/foto-service/service-4.webp'

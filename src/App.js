@@ -48,7 +48,7 @@ function App() {
 
             <FotoCarService />
 
-            <OtzyvySection2 />
+            {/* <OtzyvySection2 /> */}
 
             <VoprosOtvet />
           </main>

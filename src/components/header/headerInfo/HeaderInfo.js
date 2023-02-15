@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Image, Popover, Affix,Badge } from 'antd'
+import { Image, Affix } from 'antd'
 import logo from '../../../images/logo2.png'
 import telegram from '../../../images/social-icon/telegram.svg'
 import viber from '../../../images/social-icon/viber.svg'
@@ -7,7 +7,6 @@ import whatsapp from '../../../images/social-icon/WhatsApp.svg'
 import { ClockCircleOutlined, PhoneOutlined, ShakeOutlined, } from '@ant-design/icons'
 import { useScreens } from '../../../Constants/constants'
 import { DrawerComp } from '../../drawerComp/DrawerComp'
-
 
 
 

@@ -87,7 +87,7 @@ function MainPage() {
 						placement="leftBottom"
 						title='Остались вопросы? Позвоните нам и мы ответим.'
 						onConfirm={confirm}
-						okText={<a href='tel:8029000000'>Позвонить</a>}
+						okText={<a href='tel:80296701313'>Позвонить</a>}
 						cancelText="Закрыть"
 					>
 						<FloatButton icon={<QuestionCircleOutlined />} />
@@ -117,7 +117,7 @@ function MainPage() {
 								</Space>
 								{active === 1 &&
 									<div className='flex flex-col text-lg'>
-										<a href='tel:80290000000'
+										<a href='tel:80296701313'
 											className='mb-6 text-white text-xl hover:text-[#ff001d]'
 											onClick={() => window.gtag_report_conversion('tel:80296701313')}
 										>

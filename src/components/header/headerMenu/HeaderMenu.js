@@ -90,7 +90,7 @@ export const HeaderMenu = ({ isVisible }) => {
 											</LinkScroll>
 										</li>
 
-										<li>
+										{/* <li>
 											<LinkScroll to='otzyvy'
 												smooth={true}
 												offset={-100}
@@ -99,7 +99,7 @@ export const HeaderMenu = ({ isVisible }) => {
 											>
 												Отзывы
 											</LinkScroll>
-										</li>
+										</li> */}
 										
 										<li><LinkScroll to='vopros'
 											smooth={true}

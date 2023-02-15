@@ -78,7 +78,7 @@ export const MenuMobil = ({ onClose }) => {
 							Галерея
 						</LinkScroll>
 					</li>
-					<li>
+					{/* <li>
 						<LinkScroll to='otzyvy'
 							smooth={true}
 							offset={-100}
@@ -88,7 +88,7 @@ export const MenuMobil = ({ onClose }) => {
 						>
 							Отзывы
 						</LinkScroll>
-					</li>
+					</li> */}
 					<li>
 						<LinkScroll to='vopros'
 							smooth={true}
@@ -115,8 +115,8 @@ export const MenuMobil = ({ onClose }) => {
 				</ul>
 
 			
-				<div className=''>
-					<Image src={image} width='100%' />
+				<div className='w-full text-center'>
+				<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A4d4460cb020f3511b05d617dbf8d39b517124c6896604700241f0ebbe4e12960&amp;source=constructor" width="330" height="330" frameborder="0"></iframe>
 				</div>
 
 				<div className='flex justify-between absolute bottom-3'>
