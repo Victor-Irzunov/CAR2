@@ -1,11 +1,12 @@
 import React, { useState } from 'react'
 import { useScreens } from '../../../Constants/constants'
-import { Affix, Button, Image,Popover,Badge } from 'antd'
+import { Affix, Button, Image, Popover, Badge } from 'antd'
 import { motion, AnimatePresence } from "framer-motion"
-import { ShakeOutlined, CalendarOutlined, MenuOutlined,NotificationOutlined } from '@ant-design/icons'
+import { ShakeOutlined, CalendarOutlined, MenuOutlined, NotificationOutlined } from '@ant-design/icons'
 import { DrawerComp } from '../../drawerComp/DrawerComp'
 import logo from '../../../images/logo2.png'
 import { Link as LinkScroll } from 'react-scroll'
+import { Link } from 'react-router-dom'
 
 
 const text = <span className='text-xl text-[#ff001d]'>Не пропустите</span>
@@ -70,14 +71,18 @@ export const HeaderMenu = ({ isVisible }) => {
 										</LinkScroll>
 										</li>
 										<li>
+
 											<LinkScroll to='price'
 												smooth={true}
 												offset={-100}
 												duration={800}
 												className="cursor-pointer"
 											>
-												Цены
+												{/* <Link to='/'> */}
+													Цены
+												{/* </Link> */}
 											</LinkScroll>
+
 										</li>
 										<li>
 											<LinkScroll to='galereya'
@@ -91,16 +96,11 @@ export const HeaderMenu = ({ isVisible }) => {
 										</li>
 
 										{/* <li>
-											<LinkScroll to='otzyvy'
-												smooth={true}
-												offset={-100}
-												duration={800}
-												className="cursor-pointer"
-											>
+											<Link to='/otzyvy'>
 												Отзывы
-											</LinkScroll>
+											</Link>
 										</li> */}
-										
+
 										<li><LinkScroll to='vopros'
 											smooth={true}
 											offset={-100}
@@ -109,7 +109,7 @@ export const HeaderMenu = ({ isVisible }) => {
 										>
 											Вопросы
 										</LinkScroll></li>
-										
+
 										<li>
 											<LinkScroll to='contact'
 												smooth={true}

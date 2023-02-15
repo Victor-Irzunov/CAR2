@@ -15,6 +15,9 @@ import DrawerWindow from '../../components/drawer/DrawerWindow'
 import { Context } from '../../App'
 import { Helmet } from "react-helmet"
 import { ModalComp } from '../../components/modal/ModalComp'
+import PricePage from '../PricePage'
+import FotoCarService from '../FotoCarService'
+import VoprosOtvet from '../VoprosOtvet'
 
 
 function MainPage() {
@@ -242,6 +245,10 @@ function MainPage() {
 					<ModalComp isModalOpen={isModalOpen} title={title} handleCancel={handleCancel} question={true} />
 				</div>
 			</section>
+
+			<PricePage />
+			<FotoCarService />
+			<VoprosOtvet/>
 		</>
 	)
 }

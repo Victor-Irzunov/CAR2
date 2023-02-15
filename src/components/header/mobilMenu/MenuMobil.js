@@ -5,6 +5,7 @@ import { Link as LinkScroll } from 'react-scroll'
 import { PhoneOutlined, ShakeOutlined, CalendarOutlined } from '@ant-design/icons'
 import { DrawerComp } from '../../drawerComp/DrawerComp'
 import image from '../../../images/map.jpeg'
+import { Link } from 'react-router-dom'
 
 export const MenuMobil = ({ onClose }) => {
 	const [open, setOpen] = useState(false)
@@ -45,17 +46,6 @@ export const MenuMobil = ({ onClose }) => {
 							Главная
 						</LinkScroll>
 					</li>
-					{/* <li>
-						<LinkScroll to='service'
-							smooth={true}
-							offset={-100}
-							duration={800}
-							className="cursor-pointer"
-							onClick={onClose}
-						>
-							Услуги
-						</LinkScroll>
-					</li> */}
 					<li>
 						<LinkScroll to='price'
 							smooth={true}
@@ -75,19 +65,17 @@ export const MenuMobil = ({ onClose }) => {
 							className="cursor-pointer"
 							onClick={onClose}
 						>
-							Галерея
+							{/* <Link to='/'> */}
+								Галерея
+							{/* </Link> */}
 						</LinkScroll>
 					</li>
 					{/* <li>
-						<LinkScroll to='otzyvy'
-							smooth={true}
-							offset={-100}
-							duration={800}
-							className="cursor-pointer"
+						<Link to='/otzyvy'
 							onClick={onClose}
 						>
 							Отзывы
-						</LinkScroll>
+						</Link>
 					</li> */}
 					<li>
 						<LinkScroll to='vopros'
@@ -100,7 +88,7 @@ export const MenuMobil = ({ onClose }) => {
 							Вопросы
 						</LinkScroll>
 					</li>
-				
+
 					<li>
 						<LinkScroll to='contact'
 							smooth={true}
@@ -114,9 +102,9 @@ export const MenuMobil = ({ onClose }) => {
 					</li>
 				</ul>
 
-			
+
 				<div className='w-full text-center'>
-				<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A4d4460cb020f3511b05d617dbf8d39b517124c6896604700241f0ebbe4e12960&amp;source=constructor" width="330" height="330" frameborder="0"></iframe>
+					<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A4d4460cb020f3511b05d617dbf8d39b517124c6896604700241f0ebbe4e12960&amp;source=constructor" width="330" height="330" frameborder="0"></iframe>
 				</div>
 
 				<div className='flex justify-between absolute bottom-3'>

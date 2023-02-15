@@ -86,7 +86,7 @@ export const FormDate = () => {
 						},
 					]}
 				>
-					<TimePicker size='large' />
+					<TimePicker size='large' format='HH:mm'  />
 				</Form.Item>
 
 				<Form.Item

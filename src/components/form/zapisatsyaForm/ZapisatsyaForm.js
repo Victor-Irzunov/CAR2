@@ -110,6 +110,7 @@ const ZapisatsyaForm = () => {
 					style={{
 						width: '100%',
 					}}
+					format='HH:mm'
 				/>
 			</Form.Item>
 
