@@ -44,13 +44,22 @@ export const FooterSection = () => {
 							Предлагаем профессональную диагностику и качественный ремонт Вашего автомобиля.</p>
 					</div>
 
-					<h3 className='text-white  font-light uppercase'>Записаться на ремонт</h3>
+					<h3 className='text-white  font-light uppercase'>Наш телефон</h3>
 
 					<div className='text-[#ff001d] mb-6 mt-5'>
 						<a href='tel:80296701313' className='text-4xl'>+375 29 670-13-13</a>
 						{/* <p className=''>
 						+375 29 278-08-78
 					</p> */}
+					</div>
+
+					<div className=' mb-6 mt-5'>
+						<p className='text-white  font-light uppercase'>
+							Наш адрес
+						</p>
+						<p className='text-[#ff001d] text-xl'>
+							г. Минск ул. Гурского 22к6
+						</p>
 					</div>
 
 					<div className='text-white'>
