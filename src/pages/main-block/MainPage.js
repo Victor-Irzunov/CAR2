@@ -23,7 +23,7 @@ import VoprosOtvet from '../VoprosOtvet'
 function MainPage() {
 	const { data } = useContext(Context)
 	const screens = useScreens()
-	const [active, setActive] = useState(1)
+	const [active, setActive] = useState(2)
 	const [open, setOpen] = useState(false)
 	const [isModalOpen, setIsModalOpen] = useState(false)
 	const [title, setTitle] = useState('')
@@ -143,10 +143,10 @@ function MainPage() {
 								}
 								{
 									active === 2 &&
-									<div className='text-white text-lg'>
+									<div className='text-white text-lg font-light'>
 										<p>г. Минск</p>
-										{/* <p><span className='font-thin text-sm'>микрорайон</span> Минск</p> */}
-										<p>ул. Гурского 22к6 </p>
+										<p  className='font-thin text-sm'>Фрунзенский район</p>
+										<p>ул. Гурского 22 к6 </p>
 										<Button type='link' href='https://yandex.by/maps/157/minsk/house/Zk4YcgBoSk0AQFtpfXR5dntgZA==/?ll=27.478387%2C53.887730&z=16.81' className='text-[#ff001d]' style={{ paddingLeft: '0' }} target='_blank'>Посмотреть на карте</Button>
 									</div>
 								}
@@ -154,13 +154,14 @@ function MainPage() {
 									active === 3 &&
 									<div className=''>
 										<Space direction="vertical" >
-											<Badge status="error" style={{ color: '#f03226' }} text="Пн: выходной" />
-											<Badge status="success" style={{ color: '#fff' }} text="Вт: 8:00-18:00" />
-											<Badge status="success" style={{ color: '#fff' }} text="Ср: 8:00-18:00" />
-											<Badge status="success" style={{ color: '#fff' }} text="Чт: 8:00-18:00" />
-											<Badge status="success" style={{ color: '#fff' }} text="Пт: 8:00-18:00" />
-											<Badge status="success" style={{ color: '#fff' }} text="Сб: 8:00-18:00" />
-											<Badge status="success" style={{ color: '#fff' }} text="Вс: 8:00-18:00" />
+											{/* <Badge status="error" style={{ color: '#f03226' }} text="Пн: выходной" /> */}
+											<Badge status="success" style={{ color: '#fff' }} text="Пн: 8:00-20:00" />
+											<Badge status="success" style={{ color: '#fff' }} text="Вт: 8:00-20:00" />
+											<Badge status="success" style={{ color: '#fff' }} text="Ср: 8:00-20:00" />
+											<Badge status="success" style={{ color: '#fff' }} text="Чт: 8:00-20:00" />
+											<Badge status="success" style={{ color: '#fff' }} text="Пт: 8:00-20:00" />
+											<Badge status="success" style={{ color: '#fff' }} text="Сб: 8:00-20:00" />
+											<Badge status="success" style={{ color: '#fff' }} text="Вс: 8:00-20:00" />
 										</Space>
 									</div>
 								}

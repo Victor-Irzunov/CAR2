@@ -1,11 +1,10 @@
 import React, { useState } from 'react'
-import { Button, Image } from 'antd'
-import { motion } from "framer-motion"
+import { Button } from 'antd'
+// import { motion } from "framer-motion"
 import { Link as LinkScroll } from 'react-scroll'
-import { PhoneOutlined, ShakeOutlined, CalendarOutlined } from '@ant-design/icons'
+import { ShakeOutlined, CalendarOutlined } from '@ant-design/icons'
 import { DrawerComp } from '../../drawerComp/DrawerComp'
-import image from '../../../images/map.jpeg'
-import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom'
 
 export const MenuMobil = ({ onClose }) => {
 	const [open, setOpen] = useState(false)

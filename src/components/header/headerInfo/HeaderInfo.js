@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
-import { Image, Affix } from 'antd'
+import { Image, Affix, Button, Tooltip } from 'antd'
 import logo from '../../../images/logo2.png'
 import telegram from '../../../images/social-icon/telegram.svg'
 import viber from '../../../images/social-icon/viber.svg'
-import whatsapp from '../../../images/social-icon/WhatsApp.svg'
-import { ClockCircleOutlined, PhoneOutlined, ShakeOutlined, } from '@ant-design/icons'
+// import whatsapp from '../../../images/social-icon/WhatsApp.svg'
+import { ClockCircleOutlined, PhoneOutlined, ShakeOutlined, InfoOutlined, QuestionOutlined, QuestionCircleOutlined } from '@ant-design/icons'
 import { useScreens } from '../../../Constants/constants'
 import { DrawerComp } from '../../drawerComp/DrawerComp'
 
@@ -24,7 +24,7 @@ export const HeaderInfo = ({ setIsVisible }) => {
 					?
 					<div className='bg-white'>
 						<div className='container flex justify-between items-center py-2'>
-							
+
 							<div className='flex justify-start items-center'>
 								<Image src={logo} preview={false} width='150px' />
 							</div>
@@ -57,15 +57,16 @@ export const HeaderInfo = ({ setIsVisible }) => {
 							<div className='flex flex-col items-center'>
 								<p className='text-sm text-[#ff001d] mb-1'>Напишите нам</p>
 								<div>
-									<a fref='https://t.me/@sergey_avtohelp'><Image src={telegram} style={{ width: '30px' }} /></a>
-									<a fref='http://wa.me/375296701313?text=нужен%20эвакуатор%20'><Image src={whatsapp} style={{ width: '30px', marginLeft: '8px' }} /></a>
-									<a fref='viber://add?number=375296701313'><Image src={viber} style={{ width: '30px', marginLeft: '8px' }} /></a>
+									<a href='https://t.me/@vipservice.by'><Image src={telegram} preview={false} style={{ width: '30px' }} /></a>
+									{/* <a href='http://wa.me/375296701313?text=нужен%20эвакуатор%20'><Image src={whatsapp} style={{ width: '30px', marginLeft: '8px' }} /></a> */}
+									<a href='viber://add?number=375296701313'><Image src={viber} preview={false} style={{ width: '30px', marginLeft: '8px' }} /></a>
 								</div>
 							</div>
+
 						</div>
 					</div>
 					:
-					<div className='flex flex-col justify-between items-center pt-20 pb-1 relative z-10 bg-white'>
+					<div className='flex flex-col justify-between items-center pt-16 pb-3 relative z-10 bg-white'>
 						<div className='flex text-lg items-center text-[#ff001d'>
 							<ClockCircleOutlined />
 							<span className='uppercase ml-2 font-semibold mr-0.5'>8:00-20:00</span>
@@ -84,9 +85,9 @@ export const HeaderInfo = ({ setIsVisible }) => {
 						<div className='flex flex-col items-center mb-2'>
 							<p className='text-sm text-[#ff001d] mb-3 uppercase cursor-pointer' onClick={() => showDrawer('top', 'Заказать звонок')}><ShakeOutlined /> Заказать звонок</p>
 							<div>
-								<a fref='https://t.me/@'><Image src={telegram} preview={false} style={{ width: '30px' }} /></a>
-								<a fref='http://wa.me/375296701313?text=нужен%20ремонт%20'><Image src={whatsapp} preview={false} style={{ width: '30px', marginLeft: '1.5em' }} /></a>
-								<a fref='viber://add?number=375296701313'><Image src={viber} preview={false} style={{ width: '30px', marginLeft: '1.5em' }} /></a>
+								<a href='https://t.me/@vipservice.by'><Image src={telegram} preview={false} style={{ width: '30px' }} /></a>
+								{/* <a fref='http://wa.me/375296701313?text=нужен%20ремонт%20'><Image src={whatsapp} preview={false} style={{ width: '30px', marginLeft: '1.5em' }} /></a> */}
+								<a href='viber://add?number=375296701313'><Image src={viber} preview={false} style={{ width: '30px', marginLeft: '1.5em' }} /></a>
 							</div>
 						</div>
 						{/* <Button type='primary'>
@@ -94,6 +95,33 @@ export const HeaderInfo = ({ setIsVisible }) => {
 								<PhoneOutlined className='rotate-90 animate-pulse' /><span className='uppercase'> Заказать звонок</span>
 							</a>
 						</Button> */}
+						<div className='flex justify-center relative'>
+							<Button
+								type='primary'
+								ghost
+								className='mr-2'
+								icon={<PhoneOutlined />}
+								shape="round"
+							>
+								<a href='tel:80296701313' className='hover:text-red-600'>
+									{" "}Круглосуточная тех. помощь
+								</a>
+							</Button>
+							<Tooltip
+								title="Оказываем круглосуточной ремонт авто с выездом к клиенту, если нет возможности отремонтировать авто на месте отвезём на наш автосервис."
+								color='red'
+								placement="topRight"
+								className='absolute -right-5 top-2'
+							>
+								{/* <Button
+									type="primary"
+									ghost
+									icon={<InfoOutlined />}
+									className=''
+								/> */}
+								<QuestionCircleOutlined className='text-gray-600' />
+							</Tooltip>
+						</div>
 
 						<Affix offsetTop={30} onChange={() => setIsVisible(i => !i)}><div></div></Affix>
 					</div>
